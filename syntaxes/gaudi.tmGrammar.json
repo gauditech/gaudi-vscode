@@ -1,0 +1,12 @@
+{
+  "scopeName": "source.gaudi",
+  "patterns": [{ "include": "#comments" }],
+  "repository": {
+    "comments": {
+      "patterns": [
+        { "name": "comment.line.double-slash", "match": "//.*$" },
+        { "name": "comment.block", "begin": "/\\*", "end": "\\*/" }
+      ]
+    }
+  }
+}

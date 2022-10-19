@@ -1,0 +1,54 @@
+{
+  "name": "gaudi-vscode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "activationEvents": [
+    "onLanguage:gaudi"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "languages": [
+      {
+        "id": "gaudi",
+        "extensions": [
+          ".gaudi"
+        ],
+        "configuration": "language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "gaudi",
+        "scopeName": "source.gaudi",
+        "path": "./syntaxes/gaudi.tmGrammar.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[gaudi]": {
+        "editor.semanticHighlighting.enabled": true
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -b",
+    "watch": "tsc -b -w",
+    "lint": "eslint --fix ./src --ext .ts,.tsx"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.0",
+    "@types/vscode": "^1.72.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^8.0.2"
+  }
+}
