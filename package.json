@@ -4,9 +4,6 @@
   "engines": {
     "vscode": "^1.72.0"
   },
-  "activationEvents": [
-    "onLanguage:gaudi"
-  ],
   "main": "./out/extension",
   "contributes": {
     "languages": [
