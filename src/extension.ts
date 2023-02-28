@@ -13,7 +13,15 @@ let client: LanguageClient;
 
 export function activate(_context: ExtensionContext) {
   // The server is implemented in node
-  const serverModule = path.join(homedir(), "gaudi", "gaudi", "dist", "newparser", "lsp.js");
+  const serverModule = path.join(
+    homedir(),
+    "gaudi",
+    "gaudi",
+    "dist",
+    "newparser",
+    "languageServer",
+    "languageServer.js"
+  );
 
   // The debug options for the server
   // --inspect=6009: runs the server in Node's Inspector mode so VS Code can attach to the server for debugging
