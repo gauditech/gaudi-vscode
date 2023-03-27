@@ -18,7 +18,7 @@ export function activate(_context: ExtensionContext) {
     "gaudi",
     "gaudi",
     "dist",
-    "newparser",
+    "compiler",
     "languageServer",
     "languageServer.js"
   );
