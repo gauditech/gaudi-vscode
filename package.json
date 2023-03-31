@@ -1,8 +1,11 @@
 {
   "name": "gaudi-vscode",
   "version": "0.0.1",
+  "private": true,
+  "repository": "gitlab:gaudiorg/gaudi-vscode",
+  "license": "UNLICENSED",
   "engines": {
-    "vscode": "^1.72.0"
+    "vscode": "^1.75.0"
   },
   "main": "./out/extension",
   "contributes": {
@@ -31,13 +34,15 @@
   "scripts": {
     "compile": "tsc -b",
     "watch": "tsc -b -w",
+    "build": "npm run compile && vsce package",
     "lint": "eslint --fix ./src --ext .ts,.tsx"
   },
   "devDependencies": {
     "@types/node": ">=18.0.0",
-    "@types/vscode": "^1.76.0",
+    "@types/vscode": "^1.75.0",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",
+    "@vscode/vsce": "^2.18.0",
     "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.4",
@@ -46,6 +51,7 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
+    "@gaudi/engine": "file:../gaudi",
     "vscode-languageclient": "^8.1.0"
   }
 }

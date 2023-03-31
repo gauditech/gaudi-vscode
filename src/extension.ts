@@ -1,4 +1,3 @@
-import { homedir } from "os";
 import * as path from "path";
 import { ExtensionContext } from "vscode";
 
@@ -14,9 +13,11 @@ let client: LanguageClient;
 export function activate(_context: ExtensionContext) {
   // The server is implemented in node
   const serverModule = path.join(
-    homedir(),
-    "gaudi",
-    "gaudi",
+    __dirname,
+    "..",
+    "node_modules",
+    "@gaudi",
+    "engine",
     "dist",
     "compiler",
     "languageServer",
