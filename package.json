@@ -5,7 +5,7 @@
   "repository": "gitlab:gaudiorg/gaudi-vscode",
   "license": "UNLICENSED",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": ">=1.75.0"
   },
   "main": "./out/extension",
   "contributes": {
@@ -39,16 +39,16 @@
   },
   "devDependencies": {
     "@types/node": ">=18.0.0",
-    "@types/vscode": "^1.77.0",
-    "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
+    "@types/vscode": ">=1.75.0",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
     "@vscode/vsce": "^2.18.0",
-    "eslint": "^8.37.0",
+    "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-import-resolver-typescript": "^3.5.4",
+    "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "prettier": "^2.8.7",
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "@gaudi/engine": "file:../gaudi",
