@@ -1,0 +1,8 @@
+**/*.ts
+**/*.test.js
+**/*.js.map
+**/*.ts.map
+**/tsconfig.json
+**/*.md
+/src/
+/.vscode/
