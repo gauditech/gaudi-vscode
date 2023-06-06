@@ -9,7 +9,7 @@
     "type": "git"
   },
   "publisher": "Gaudi",
-  "icon": "icon.png",
+  "icon": "icon-extension.png",
   "keywords": [
     "gaudi"
   ],
@@ -28,8 +28,8 @@
           ".gaudi"
         ],
         "icon": {
-          "light": "icon-light.svg",
-          "dark": "icon-dark.svg"
+          "light": "icon-file.svg",
+          "dark": "icon-file.svg"
         },
         "configuration": "language-configuration.json"
       }
