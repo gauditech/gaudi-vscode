@@ -17,7 +17,7 @@ export function activate(_context: ExtensionContext) {
     "..",
     "node_modules",
     "@gaudi",
-    "engine",
+    "compiler",
     "dist",
     "compiler",
     "languageServer",

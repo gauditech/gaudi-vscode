@@ -67,7 +67,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@gaudi/engine": "file:../gaudi",
+    "@gaudi/compiler": "file:../gaudi/gaudi-compiler-0.0.3.tgz",
     "vscode-languageclient": "^8.1.0"
   }
 }
