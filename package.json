@@ -9,7 +9,7 @@
     "url": "https://gitlab.com/gaudiorg/gaudi-vscode.git",
     "type": "git"
   },
-  "publisher": "Gaudi",
+  "publisher": "gauditech",
   "icon": "icon-extension.png",
   "keywords": [
     "gaudi"
