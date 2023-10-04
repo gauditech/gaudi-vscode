@@ -1,9 +1,10 @@
 {
   "name": "gaudi-vscode",
-  "version": "0.0.1",
+  "displayName": "Gaudi",
+  "version": "0.0.3",
   "private": true,
-  "license": "UNLICENSED",
-  "description": "Gaudi LSP extension for VS Code",
+  "license": "MIT",
+  "description": "Gaudi language support for Visual Studio Code",
   "repository": {
     "url": "https://gitlab.com/gaudiorg/gaudi-vscode.git",
     "type": "git"
@@ -16,6 +17,10 @@
   "categories": [
     "Programming Languages"
   ],
+  "galleryBanner": {
+    "color": "#07020a",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": ">=1.75.0"
   },
@@ -67,7 +72,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@gaudi/compiler": "file:../gaudi/gaudi-compiler-0.0.3.tgz",
+    "@gaudi/compiler": "0.0.3",
     "vscode-languageclient": "^8.1.0"
   }
 }
