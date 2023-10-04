@@ -1,8 +1,18 @@
+
+# --- IDE files 
+.vscode/
+
+# -- project files
 **/*.ts
 **/*.test.js
 **/*.js.map
 **/*.ts.map
 **/tsconfig.json
 **/*.md
-/src/
-/.vscode/
+./src/
+
+# --- manual overrides
+
+# typescript is a peer dependency of cosmiconfig and gets pulled into ext
+# we don't needed it so we'll manually ignore to make ext smaller
+node_modules/typescript
